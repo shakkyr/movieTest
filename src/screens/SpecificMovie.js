@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-unused-vars */
 import React, {useEffect,useState} from 'react';
 import {gethMovieDetail} from '../api/movie'
 import { useParams } from 'react-router-dom';
@@ -7,11 +9,11 @@ const SpecificMovie = () => {
     const params = useParams()
     
 
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
     const [detail, setDetail] = useState([]);
-    const [video, setVideo] = useState([]);
-    const [casts, setCasts] = useState([]);
-    const [similarMovie, setSimilarMovie] = useState([]);
+    // const [video, setVideo] = useState([]);
+    // const [casts, setCasts] = useState([]);
+    // const [similarMovie, setSimilarMovie] = useState([]);
 
 
     useEffect(()=> {

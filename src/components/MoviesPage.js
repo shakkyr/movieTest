@@ -104,18 +104,3 @@ export default MoviesPage;
 
 
 
-{/* <div className="movie">
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
-                  <img src={`${imageUrl}${ele.backdrop_path}`} alt={ele.title}/>
-                  <div className="movie-info">
-                    <h3>{ele.title}</h3>
-                    <span>{ele.vote_average}</span>
-                  </div>
-                </div>
-                <div className="movie-overview">
-                  <h2>Overview</h2>
-                  <p>{ele.overview}</p>
-                </div>
-              </div>
-            </div> */}

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { CarouselProvider, Slider, Slide} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
-import {getNowPlaying, gethMovieDetail} from '../api/movie'
+import {getNowPlaying} from '../api/movie'
 // import { MovieCard } from '../components/MovieCard';
 
 const imageUrl = "https://image.tmdb.org/t/p/original";
