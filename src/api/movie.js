@@ -1,7 +1,8 @@
 import axios from "axios";
 
 
-const apiKey = 'a4999a28333d1147dbac0d104526337a';
+// Put REACT_APP_TMDB_API_KEY=... in a .env file (see .env.example).
+const apiKey = process.env.REACT_APP_TMDB_API_KEY;
 const url = 'https://api.themoviedb.org/3';
 const nowPlayingUrl = `${url}/movie/now_playing`;
 // const topratedUrl = `${url}/movie/top_rated`;
@@ -12,12 +13,12 @@ const movieUrl = `${url}/movie`;
 
 
 export const getMovies = async () => {
-    const response = await axios.get(`${url}/discover/movie?api_key=0e0361a1e4feb360695e2fc32793d846&language=en-US&sort_by=popularity.desc&page=1`)
+    const response = await axios.get(`${url}/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&page=1`)
     return response;
 }
 export const getSearchMovies = async (searchFor) => {
     console.log("searchFor",searchFor);
-    const response = await axios.get(`${url}/search/movie?api_key=0e0361a1e4feb360695e2fc32793d846&query=${searchFor}&page=1`)
+    const response = await axios.get(`${url}/search/movie?api_key=${apiKey}&query=${searchFor}&page=1`)
     return response;
 }
 
